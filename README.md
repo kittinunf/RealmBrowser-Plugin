@@ -1,6 +1,6 @@
 # RealmBrowser-Plugin
 
-Open Realm Browser for your Simulator without pain
+Open Realm Browser for your Simulator without pain.
 
 ![](https://raw.githubusercontent.com/kittinunf/RealmBrowser-Plugin/master/screenshots/ss.png)
 
@@ -30,10 +30,10 @@ Xcode 6.0+ on OS X 10.10+.
 
 ## How to use
 
-* Make sure you have Realm Browser installed on your machine, if not download it here ([Realm Browser](https://static.realm.io/downloads/objc/latest)).
-* Leave your Simulator running, and make sure that your awesome App that use Realm was installed there.
+* Make sure you have Realm Browser already installed on your machine, if not download it here ([Realm Browser](https://static.realm.io/downloads/objc/latest)).
+* Leave your Simulator running, and make sure that your awesome App that uses Realm was installed in there.
 * Go to View -> Open Realm Browser (or Command + Shift + w for shortcut)
-* Tada! enjoy your Realm browser with your Realm file without manually finding right Realm path.
+* Tada! Enjoy your Realm browser with your Realm file without manually finding right Realm path.
 
 ## Uninstallation
 
