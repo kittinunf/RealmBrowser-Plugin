@@ -100,7 +100,7 @@
         [scanner scanUpToCharactersFromSet:[NSCharacterSet newlineCharacterSet] intoString:nil];
 
         if (deviceKey && deviceStatus) {
-            _data[deviceKey] = deviceStatus;
+            self.data[deviceKey] = deviceStatus;
         }
     }
 }
