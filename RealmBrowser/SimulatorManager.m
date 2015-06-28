@@ -32,19 +32,7 @@
 
 - (instancetype)init {
     if (self = [super init]) {
-        NSString *path = @"/usr/bin/xcrun";
-        NSArray *args = @[@"simctl", @"list", @"devices"];
-
-        __block NSString *deviceData;
-        [NSTask launchWithPath:path
-                     arguments:args
-                       handler:^(NSData *output) {
-                           deviceData = [[NSString alloc] initWithData:output encoding:NSUTF8StringEncoding];
-                       }];
-
         _data = [NSMutableDictionary dictionary];
-
-        [self parseDeviceDetail:deviceData];
     }
     return self;
 }
@@ -58,6 +46,9 @@
 #pragma mark - Public
 
 - (NSString *)bootedDeviceUUID {
+    NSString *deviceData = [self loadDeviceDetail];
+    [self parseDeviceDetail:deviceData];
+
     NSString *bootedDevice;
     for (NSString *key in [self.data allKeys]) {
         NSString *deviceStatus = self.data[key];
@@ -71,7 +62,23 @@
 
 #pragma mark - Privates
 
+- (NSString *)loadDeviceDetail {
+    NSString *path = @"/usr/bin/xcrun";
+    NSArray *args = @[@"simctl", @"list", @"devices"];
+
+    __block NSString *deviceData;
+    [NSTask launchWithPath:path
+                 arguments:args
+                   handler:^(NSData *output) {
+                       deviceData = [[NSString alloc] initWithData:output encoding:NSUTF8StringEncoding];
+                   }];
+
+    return deviceData;
+}
+
 - (void)parseDeviceDetail:(NSString *)detail {
+    [self.data removeAllObjects];
+
     NSScanner *scanner = [NSScanner scannerWithString:detail];
     //skip punctuation ( )
     scanner.charactersToBeSkipped = [NSCharacterSet punctuationCharacterSet];
