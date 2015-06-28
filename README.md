@@ -28,14 +28,14 @@ Xcode 6.0+ on OS X 10.10+.
 
 ![](https://raw.githubusercontent.com/kittinunf/RealmBrowser-Plugin/master/screenshots/ss2.png)
 
-### How to use
+## How to use
 
 * Make sure you have Realm Browser installed on your machine, if not download it here ([Realm Browser](https://static.realm.io/downloads/objc/latest)).
 * Leave your Simulator running, and make sure that your awesome App that use Realm was installed there.
 * Go to View -> Open Realm Browser (or Command + Shift + w for shortcut)
 * Tada! enjoy your Realm browser with your Realm file without manually finding right Realm path.
 
-### Uninstallation
+## Uninstallation
 
 `rm -rf ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/RealmBrowser.xcplugin`
 
