@@ -31,14 +31,14 @@ Xcode 6.0+ on OS X 10.10+.
 
 ## Credits
 
-Realm Browser Plugin is brought to you by Kittinun Vantasin
+RealmBrowser-Plugin is brought to you by Kittinun Vantasin
 
 ## License
 
-Realm Browser is released under the [MIT](http://opensource.org/licenses/MIT) license.
+RealmBrowser-Plugin is released under the [MIT](http://opensource.org/licenses/MIT) license.
 >The MIT License (MIT)
 
->Copyright (c) 2015 by Realm Browser contributors
+>Copyright (c) 2015 by Contributors
 
 >Permission is hereby granted, free of charge, to any person obtaining a copy
 >of this software and associated documentation files (the "Software"), to deal
