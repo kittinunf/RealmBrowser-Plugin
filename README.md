@@ -2,9 +2,13 @@
 
 Open Realm Browser for your Simulator without pain
 
-![](https://raw.githubusercontent.com/kittinunf/RealmBrowser-Plugin/master/art/ss.png)
+![](https://raw.githubusercontent.com/kittinunf/RealmBrowser-Plugin/master/screenshots/ss.png)
 
-![](https://raw.githubusercontent.com/kittinunf/RealmBrowser-Plugin/master/art/ss1.png)
+![](https://raw.githubusercontent.com/kittinunf/RealmBrowser-Plugin/master/screenshots/ss1.png)
+
+## Why
+
+Finding Realm File path can be such a pain, look at this [StackOverflow answer](http://stackoverflow.com/questions/28465706/how-to-find-my-realm-file/28465803#28465803). Wouldn't be easier if there is a Plug-in that does this for you automatically?
 
 ## Requirements
 
@@ -20,14 +24,20 @@ Xcode 6.0+ on OS X 10.10+.
 
 ### Alcatraz
 
-* Support soon
+* Support [Alcatraz](http://alcatraz.io/) by Searching with name `RealmBrowser`
+
+![](https://raw.githubusercontent.com/kittinunf/RealmBrowser-Plugin/master/screenshots/ss2.png)
 
 ### How to use
 
-* Make sure you have Realm Browser installed on your machine, if not download [Realm Browser](https://static.realm.io/downloads/objc/latest)
-* Leave your Simulator running, and make sure that your awesome App that use [Realm](https://realm.io/) was installed there.
+* Make sure you have Realm Browser installed on your machine, if not download it here ([Realm Browser](https://static.realm.io/downloads/objc/latest)).
+* Leave your Simulator running, and make sure that your awesome App that use Realm was installed there.
 * Go to View -> Open Realm Browser (or Command + Shift + w for shortcut)
 * Tada! enjoy your Realm browser with your Realm file without manually finding right Realm path.
+
+### Uninstallation
+
+`rm -rf ~/Library/Application\ Support/Developer/Shared/Xcode/Plug-ins/RealmBrowser.xcplugin`
 
 ## Credits
 
@@ -38,7 +48,7 @@ RealmBrowser-Plugin is brought to you by Kittinun Vantasin
 RealmBrowser-Plugin is released under the [MIT](http://opensource.org/licenses/MIT) license.
 >The MIT License (MIT)
 
->Copyright (c) 2015 by Contributors
+>Copyright (c) 2015 by RealmBrowser-Plugin Contributors
 
 >Permission is hereby granted, free of charge, to any person obtaining a copy
 >of this software and associated documentation files (the "Software"), to deal
