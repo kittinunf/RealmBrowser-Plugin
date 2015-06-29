@@ -2,9 +2,9 @@
 
 Open Realm Browser for your Simulator without pain.
 
-![](https://raw.githubusercontent.com/kittinunf/RealmBrowser-Plugin/master/screenshots/ss.png)
+![](https://raw.githubusercontent.com/kittinunf/RealmBrowser-Plugin/master/art/ss.png)
 
-![](https://raw.githubusercontent.com/kittinunf/RealmBrowser-Plugin/master/screenshots/ss1.png)
+![](https://raw.githubusercontent.com/kittinunf/RealmBrowser-Plugin/master/art/ss1.png)
 
 ## Why
 
