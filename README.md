@@ -26,7 +26,7 @@ Xcode 6.0+ on OS X 10.10+.
 
 * Support [Alcatraz](http://alcatraz.io/) by Searching with name `RealmBrowser`
 
-![](https://raw.githubusercontent.com/kittinunf/RealmBrowser-Plugin/master/screenshots/ss2.png)
+![](https://raw.githubusercontent.com/kittinunf/RealmBrowser-Plugin/master/art/ss2.png)
 
 ## How to use
 
