@@ -79,7 +79,14 @@ NSString *const DeviceSimulatorApplicationPath = @"data/Containers/Data/Applicat
         return;
     }
 
+    //find Realm Files from UUID
     NSArray *realmFileURLs = [self realmFilesURLWithDeviceUUID:deviceUUID];
+
+    if (realmFileURLs.count == 0) {
+        NSError *realmFileNotFoundError = [NSError errorWithDomain:RealmBrowserErrorDomain code:-1 userInfo:@{ NSLocalizedDescriptionKey: @"Cannot find relevant Realm file for your active Simulator" }];
+        [[NSAlert alertWithError:realmFileNotFoundError] runModal];
+    }
+
     for (NSURL *realmFileURL in realmFileURLs) {
         [[NSWorkspace sharedWorkspace] openFile:[realmFileURL path] withApplication:RealmBrowserApp];
     }
