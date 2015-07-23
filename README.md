@@ -1,3 +1,7 @@
+## Deprecated
+
+RealmBrowser-Plugin is deprecated in favor of official [Realm Plugin](https://github.com/realm/realm-cocoa/tree/master/plugin). Implementation has been merged upstream there. Any updates, bug fixes or improvements should be continued in the official repository instead. Thanks!
+
 # RealmBrowser-Plugin
 
 Open Realm Browser for your Simulator without pain.
